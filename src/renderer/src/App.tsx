@@ -1,5 +1,9 @@
 function App(): JSX.Element {
-  return <div>startss</div>
+  const handleClick = (): void => {
+    window.api.uploadSong()
+  }
+
+  return <button onClick={handleClick}>Click</button>
 }
 
 export default App
